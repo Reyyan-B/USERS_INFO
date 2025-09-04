@@ -1,33 +1,19 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/src/normalize.css">
-    <link rel="stylesheet" href="src/style.css">
-    <title>Users Info</title>
-  </head>
-  <body>
-    <div class="container">
-      <div class="users_list">
-        <!-- <div class="user_box">
-          <h2 class="user_name">Name : omar</h2>
-          <h3 class="user_id">id : 3</h3>
-        </div>
-        <div class="user_box">
-          <h2 class="user_name">Name : omar</h2>
-          <h3 class="user_id">id : 3</h3>
-        </div>
-        <div class="user_box">
-          <h2 class="user_name">Name : omar</h2>
-          <h3 class="user_id">id : 3</h3>
-        </div>
-        <div class="user_box">
-          <h2 class="user_name">Name : omar</h2>
-          <h3 class="user_id">id : 3</h3>
-        </div>
-        <div class="user_box">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/src/normalize.css">
+  <link rel="stylesheet" href="src/style.css">
+  <title>Users Info</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="users_list">
+      <!-- <div class="user_box">
           <h2 class="user_name">Name : omar</h2>
           <h3 class="user_id">id : 3</h3>
         </div>
@@ -35,8 +21,30 @@
           <h2 class="user_name">Name : omar</h2>
           <h3 class="user_id">id : 3</h3>
         </div> -->
+    </div>
+    <div class="popup" id="popup-1">
+      <div class="overlay">
+        <div class="content">
+          <div class="close-btn">&times;</div>
+          <p class="id">ID: 1</p>
+          <p class="name"></p>
+          <p class="username"></p>
+          <p class="email"></p>
+          <p class="address-text"></p>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+            class="lucide lucide-map-pin-house-icon lucide-map-pin-house" id="map-icon">
+            <path
+              d="M15 22a1 1 0 0 1-1-1v-4a1 1 0 0 1 .445-.832l3-2a1 1 0 0 1 1.11 0l3 2A1 1 0 0 1 22 17v4a1 1 0 0 1-1 1z" />
+            <path d="M18 10a8 8 0 0 0-16 0c0 4.993 5.539 10.193 7.399 11.799a1 1 0 0 0 .601.2" />
+            <path d="M18 22v-3" />
+            <circle cx="10" cy="10" r="3" />
+          </svg>
+        </div>
       </div>
     </div>
-    <script src="/src/main.js"></script>
-  </body>
+  </div>
+  <script src="/src/main.js"></script>
+</body>
+
 </html>
