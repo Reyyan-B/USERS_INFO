@@ -42,6 +42,7 @@ usersList.addEventListener("click", async (e) => {
         document.querySelector("#popup-1 .email").textContent = `Email: ${user.email}`;
         const fullAddress = `${user.address.street}, ${user.address.suite}, ${user.address.city}, ${user.address.zipcode}`;
         document.querySelector("#popup-1 .address-text").textContent = `Address: ${fullAddress}`;
+        currentAddress = fullAddress;
 
         // Show popup
         document.getElementById("popup-1").classList.add("active");
@@ -52,5 +53,11 @@ document.querySelector(".close-btn").addEventListener("click", () => {
     document.getElementById("popup-1").classList.remove("active");
 });
 
+document.getElementById("map-icon").addEventListener("click", () =>{
+    if (currentAddress) {
+        const url = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(currentAddress)}`;
+        window.open(url,"_blank");
+    }
+});
 
 
