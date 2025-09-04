@@ -75,3 +75,53 @@ ul {
     transform: scale(1.05);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
+
+.popup .overlay {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+    display: none;
+}
+
+.popup .content {
+    position: absolute;
+    top: 50%;
+    left:50%;
+    background: #fff;
+    width: 30rem;
+    height:15rem ;
+    z-index: 2;
+    padding: 2rem;
+}
+.popup .content p {
+    margin: 0.5rem;
+}
+.popup .content svg {
+    cursor: pointer;
+    margin: 0.5rem;
+}
+.popup .close-btn {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px ;
+    text-align: center;
+}
+
+.popup.active .overlay {
+    display: block;
+}
+
+.popup.active .content {
+    transition: all 100ms ease-in-out;
+    transform:translate(-50%,-50%) scale(1);
+}
